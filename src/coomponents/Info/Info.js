@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
 import Rating from "../Rating/Rating";
 import "./Info.css";
 import { FaCheckCircle, FaCircle } from "react-icons/fa";
@@ -21,6 +19,7 @@ const sizes = [48, 49, 50, 51, 52, 53, 54];
 
 const Info = () => {
 	const [counter, setCounter] = useState(10);
+	const [color, setColor] = useState(1);
 	return (
 		<Grid
 			container
@@ -45,7 +44,7 @@ const Info = () => {
 				/>
 				<span className="category">Gray Running Sneakers</span>
 			</div>
-			{/* <Divider /> */}
+
 			<Box mt={2}>
 				<div className="product_name">Black Running Sneakers</div>
 				<Rating />
@@ -68,51 +67,53 @@ const Info = () => {
 				</div>
 				<div className="btn_line">
 					<p className="btn-group">
-						<FaCheckCircle
-							size={25}
-							style={{ paddingRight: "5px" }}
-						/>
-						<FaCircle
-							size={25}
-							style={{ paddingRight: "5px", fill: "#ebedf0" }}
-						/>
-						<FaCircle
-							size={25}
-							style={{ fill: "#7A3050", content: "h" }}
-						/>
+						{color == 1 ? (
+							<FaCheckCircle
+								size={25}
+								style={{ paddingRight: "5px" }}
+							/>
+						) : (
+							<FaCircle
+								size={25}
+								style={{ paddingRight: "5px" }}
+								onClick={() => {
+									setColor(1);
+								}}
+							/>
+						)}
+
+						{color == 2 ? (
+							<FaCircle
+								size={25}
+								style={{ paddingRight: "5px", fill: "#ebedf0" }}
+							/>
+						) : (
+							<FaCircle
+								size={25}
+								style={{ paddingRight: "5px", fill: "#ebedf0" }}
+								onClick={() => {
+									setColor(2);
+									console.log(color);
+								}}
+							/>
+						)}
+
+						{color == 3 ? (
+							<FaCheckCircle
+								size={25}
+								style={{ fill: "#7A3050", content: "h" }}
+							/>
+						) : (
+							<FaCircle
+								size={25}
+								style={{ fill: "#7A3050", content: "h" }}
+								onClick={() => {
+									setColor(3);
+								}}
+							/>
+						)}
 					</p>
-					{/* <p className="color_check">
-						<input
-							type="checkbox"
-							id="cb1"
-							checked
-							className="round_check check2"
-						/>
-						<label
-							for="cb1"
-							style={{ backgroundColor: "red", color: "red" }}
-						></label>
-						<input
-							type="checkbox"
-							id="cb2"
-							className="round_check check2"
-						/>
-						<label
-							for="cb1"
-							style={{
-								backgroundColor: "blue",
-							}}
-						></label>
-						<input
-							type="checkbox"
-							id="cb2"
-							className="round_check check2"
-						/>
-						<label
-							for="cb3"
-							style={{ backgroundColor: "red" }}
-						></label>
-					</p> */}
+
 					<p className="he">
 						<select name="count">
 							{sizes.map((size) => (

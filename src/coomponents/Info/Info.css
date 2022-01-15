@@ -228,26 +228,3 @@
 	font-size: 12px;
 	line-height: 14px;
 }
-
-/* .color_check {
-	position: absolute;
-	background-color: white;
-	border: 1px solid green;
-
-	border-radius: 30px;
-}
-
-.color_check label {
-	display: inline;
-}
-
-
-
-.color_check .round_check + label {
-	border: 1px solid black;
-	margin-top: 10px;
-	margin-left: 10px;
-	border-radius: 100px;
-	display: inline-block;
-	position: relative;
-} */
