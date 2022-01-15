@@ -1,0 +1,144 @@
+.toolbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: transparent;
+	height: 56px;
+}
+
+.toolbar__navigation {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	padding: 0 1rem;
+}
+
+.toolbar__logo a {
+	position: absolute;
+	width: 175px;
+	height: 81px;
+	left: 121px;
+	top: 15px;
+
+	font-family: Inter, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 67.8095px;
+	line-height: 81px;
+
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+}
+
+.spacer {
+	flex: 1;
+}
+
+.count {
+	font-size: 14px;
+
+	position: absolute;
+	height: 14px;
+	width: 8px;
+}
+.toolbar_navigation-items {
+	margin-top: 40px;
+	margin-right: 20px;
+}
+.toolbar_navigation-items ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.borderr {
+	border: 2px solid black;
+}
+
+.toolbar__logo {
+	margin-left: 1rem;
+}
+
+.toolbar_navigation-items li:first-child {
+	padding: 0 0.5rem;
+	margin-right: 125px;
+}
+.toolbar_navigation-items li:last-child {
+	padding: 0 0.5rem;
+	margin-right: 70px;
+	margin-top: 7px;
+}
+.toolbar_navigation-items li:nth-child(2) {
+	padding: 0 0.5rem;
+
+	margin-top: 5px;
+}
+
+.toolbar_navigation-items a {
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+}
+
+.toolbar_navigation-items a:hover,
+.toolbar_navigation-items a:active {
+	color: #fa923f;
+}
+
+.borderr {
+	border: 1px solid transparent !important;
+}
+input[type="search"] {
+	border: none;
+	background: transparent;
+	margin: 0;
+	padding: 7px 8px;
+	font-size: 14px;
+	color: inherit;
+	border: 1px solid transparent;
+	border-radius: inherit;
+	outline: none;
+}
+
+input[type="search"]::placeholder {
+	color: #bbb;
+}
+
+button[type="submit"] {
+	text-indent: -999px;
+	overflow: hidden;
+	width: 30px;
+	font-size: 10px;
+	padding-right: 0;
+	margin-right: 17px;
+	border: 1px solid transparent;
+	border-radius: inherit;
+	background: transparent url("/public//Web/Search.svg") no-repeat center;
+	cursor: pointer;
+	opacity: 1;
+	outline: none;
+}
+
+button[type="submit"]:hover {
+	opacity: 1;
+}
+
+/* @media (max-width: 768px) {
+	.toolbar_navigation-items {
+		display: none;
+	}
+}
+
+@media (min-width: 769px) {
+	.toolbar__toggle-button {
+		display: none;
+	}
+
+	.toolbar__logo {
+		margin-left: 0;
+	}
+} */
