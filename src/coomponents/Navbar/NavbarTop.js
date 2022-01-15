@@ -14,6 +14,7 @@ const NavbarTop = () => {
 					<ul>
 						<li>
 							<div
+								className="search_icon"
 								style={{
 									padding: "3px",
 									backgroundColor: "#ECEFF2",

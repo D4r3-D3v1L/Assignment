@@ -127,18 +127,20 @@ button[type="submit"]:hover {
 	opacity: 1;
 }
 
-/* @media (max-width: 768px) {
-	.toolbar_navigation-items {
+@media (max-width: 1100px) {
+	.toolbar {
+		background-color: #37445b;
+		height: 70px;
+	}
+	.toolbar_navigation-items li input {
 		display: none;
+	}
+	.toolbar__logo a {
+		font-size: 40px;
+		position: relative;
+		margin-left: -40px;
+	}
+	.search_icon {
+		/* background: transparent url("/public//Web/Search.svg") no-repeat center; */
 	}
 }
-
-@media (min-width: 769px) {
-	.toolbar__toggle-button {
-		display: none;
-	}
-
-	.toolbar__logo {
-		margin-left: 0;
-	}
-} */

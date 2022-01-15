@@ -5,12 +5,7 @@ const Productimage = () => {
 	return (
 		<div>
 			<div className="image">
-				<img
-					src="/Web/ShoeLarge.png"
-					alt="product"
-					height="535px"
-					width="623px"
-				/>
+				<img src="/Web/ShoeLarge.png" alt="product" />
 			</div>
 		</div>
 	);

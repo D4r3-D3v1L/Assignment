@@ -5,3 +5,10 @@
 	padding-top: 90px;
 	top: 15%;
 }
+
+@media (max-width: 1200px) {
+	.image img {
+		height: 300px;
+		width: 300px;
+	}
+}

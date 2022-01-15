@@ -22,3 +22,10 @@ body {
 	top: 0;
 	overflow: hidden;
 }
+
+@media (max-width: 1200px) {
+	.slice {
+		background-color: transparent;
+		width: 0px;
+	}
+}
